@@ -15,9 +15,10 @@
     "build": "tsc -b && vite build",
     "build:gh": "tsc -b && vite build --base=/workout/",
     "predeploy": "npm run build:gh",
-    "deploy": "gh-pages -d dist",
+    "deploy": "gh-pages -d dist -t",
     "lint": "eslint .",
     "preview": "vite preview",
+    "preview:gh": "vite preview --base /workout/",
     "test": "vitest run",
     "test:watch": "vitest",
     "test:coverage": "vitest run --coverage"
