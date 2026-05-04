@@ -1,0 +1,22 @@
+{
+  "name": "zwo-workout-parser",
+  "version": "1.0.0",
+  "description": "Parse shorthand workout text into structured ZWO block objects — the XML workout format used by indoor cycling training apps",
+  "keywords": ["zwo", "workout", "parser", "cycling", "training", "structured-training", "ftp"],
+  "license": "MIT",
+  "type": "module",
+  "exports": {
+    ".": {
+      "import": "./dist/index.js",
+      "types": "./dist/index.d.ts"
+    }
+  },
+  "files": ["dist", "src", "README.md"],
+  "scripts": {
+    "build": "tsc",
+    "typecheck": "tsc --noEmit"
+  },
+  "devDependencies": {
+    "typescript": "^5.8.0"
+  }
+}
