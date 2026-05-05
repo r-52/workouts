@@ -9,16 +9,16 @@
   "overrides": {
     "zwo-workout-parser": "*"
   },
-  "homepage": "https://r-52.github.io/workout",
+  "homepage": "https://r-52.github.io/workouts",
   "scripts": {
     "dev": "vite",
     "build": "tsc -b && vite build",
-    "build:gh": "tsc -b && vite build --base=/workout/",
+    "build:gh": "tsc -b && vite build --base=/workouts/",
     "predeploy": "npm run build:gh",
     "deploy": "gh-pages -d dist -t",
     "lint": "eslint .",
     "preview": "vite preview",
-    "preview:gh": "vite preview --base /workout/",
+    "preview:gh": "vite preview --base /workouts/",
     "test": "vitest run",
     "test:watch": "vitest",
     "test:coverage": "vitest run --coverage"
